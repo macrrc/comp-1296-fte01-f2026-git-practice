@@ -6,13 +6,16 @@ def rectangle_area(length, width):
 def circle_area(radius):
     return 3.14 * (radius ** 2)
 
-area_rectangle1 = rectangle_area(10, 5)
-area_rectangle2 = rectangle_area(15, 7)
+# Takes a shape's name and it's area. Prints one line report.
+def print_area(name, area):
+    print(f"Area of {name}: {area}")
 
-area_circle1 = circle_area(4)
-area_circle2 = circle_area(6)
+shapes = {
+    "first rectangle": rectangle_area(10, 5),
+    "second rectangle": rectangle_area(15, 7),
+    "first circle": circle_area(4),
+    "second circle": circle_area(6)
+}
 
-print("Area of first rectangle:", area_rectangle1)
-print("Area of second rectangle:", area_rectangle2)
-print("Area of first circle:", area_circle1)
-print("Area of second circle:", area_circle2)
+for name, area in shapes.items():
+    print_area(name, area)
