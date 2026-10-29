@@ -9,10 +9,7 @@ def circle_area(radius):
 area_rectangle1 = rectangle_area(10, 5)
 area_rectangle2 = rectangle_area(15, 7)
 
-radius1 = 4
 area_circle1 = circle_area(4)
-
-radius2 = 6
 area_circle2 = circle_area(6)
 
 print("Area of first rectangle:", area_rectangle1)
