@@ -1,10 +1,14 @@
+# Takes a length and a width, Returns the rectangles area.
+def rectangle_area(length, width):
+    return length * width
+
 length1 = 10
 width1 = 5
-area_rectangle1 = length1 * width1
+area_rectangle1 = rectangle_area(length1, width1)
 
 length2 = 15
 width2 = 7
-area_rectangle2 = length2 * width2
+area_rectangle2 = rectangle_area(length2, width2)
 
 radius1 = 4
 area_circle1 = 3.14 * (radius1 ** 2)
