@@ -2,14 +2,18 @@
 def rectangle_area(length, width):
     return length * width
 
+# Takes a radius. Returns the circle's area.
+def circle_area(radius):
+    return 3.14 * (radius ** 2)
+
 area_rectangle1 = rectangle_area(10, 5)
 area_rectangle2 = rectangle_area(15, 7)
 
 radius1 = 4
-area_circle1 = 3.14 * (radius1 ** 2)
+area_circle1 = circle_area(4)
 
 radius2 = 6
-area_circle2 = 3.14 * (radius2 ** 2)
+area_circle2 = circle_area(6)
 
 print("Area of first rectangle:", area_rectangle1)
 print("Area of second rectangle:", area_rectangle2)
