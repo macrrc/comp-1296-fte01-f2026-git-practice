@@ -4,12 +4,18 @@ from helpers import rectangle_area, circle_area
 def print_area(name, area):
     print(f"Area of {name}: {area}")
 
-shapes = {
-    "first rectangle": rectangle_area(10, 5),
-    "second rectangle": rectangle_area(15, 7),
-    "first circle": circle_area(4),
-    "second circle": circle_area(6)
-}
+# execute the main program flow
+def main():
+    shapes = {
+        "first rectangle": rectangle_area(10, 5),
+        "second rectangle": rectangle_area(15, 7),
+        "first circle": circle_area(4),
+        "second circle": circle_area(6)
+    }
 
-for name, area in shapes.items():
-    print_area(name, area)
+    for name, area in shapes.items():
+        print_area(name, area)
+
+# main guard clause
+if __name__ == "__main__":
+    main()
