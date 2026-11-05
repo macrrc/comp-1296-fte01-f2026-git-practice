@@ -29,6 +29,9 @@ def days_above(numbers, limit):
             count += 1
     return count
 
+def create_report_line(label, value, prefix=None):
+    return f"{prefix}{label}: {value}"
+
 # main guard clause
 if __name__ == "__main__":
     print(rectangle_area(10, 10)) # outputs 100

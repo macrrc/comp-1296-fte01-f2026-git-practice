@@ -1,8 +1,5 @@
 from helpers import rectangle_area, circle_area
-
-# Takes a shape's name and it's area. Prints one line report.
-def print_area(name, area):
-    print(f"Area of {name}: {area}")
+from helpers import create_report_line
 
 # execute the main program flow
 def main():
@@ -14,7 +11,7 @@ def main():
     }
 
     for name, area in shapes.items():
-        print_area(name, area)
+       print(create_report_line(name, area, "Area of "))
 
 # main guard clause
 if __name__ == "__main__":
