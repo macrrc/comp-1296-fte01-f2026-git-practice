@@ -1,11 +1,6 @@
-from helpers import (
-    rectangle_area,
-    circle_area,
-    average,
-    warmest,
-    days_above,
-    create_report_line
-)
+from helpers.geometry import rectangle_area, circle_area
+from helpers.temperature_stats import average, warmest, days_above
+from helpers.reports import create_report_line
 
 assert rectangle_area(10, 10) == 100, "rectangle 10 and 10"
 assert circle_area(1) == 3.14, "circle radius 1"

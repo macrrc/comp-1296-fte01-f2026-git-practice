@@ -1,4 +1,4 @@
-from helpers import average, warmest, days_above
+from helpers.temperature_stats import average, warmest, days_above
 
 readings = [12.5, 14.0, 9.8, 16.2, 18.4, 15.1, 11.3]
 

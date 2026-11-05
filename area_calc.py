@@ -1,5 +1,5 @@
-from helpers import rectangle_area, circle_area
-from helpers import create_report_line
+from helpers.geometry import rectangle_area, circle_area
+from helpers.reports import create_report_line
 
 # execute the main program flow
 def main():
